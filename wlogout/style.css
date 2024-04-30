@@ -1,0 +1,83 @@
+* {
+    background-image: none;
+    font-size: 0px;
+}
+
+window {
+    background-color: transparent;
+}
+
+button {
+    color: #ebbcba;
+    background-color: #26233a;
+    outline-style: none;
+    border: none;
+    border-width: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in infinite;
+    margin: 5px; /* Add margin to create spacing between buttons */
+}
+
+button:focus {
+    background-color: #31748f;
+    background-size: 20%;
+}
+
+button:hover {
+    background-color: #3d50a1;
+    background-size: 25%;
+    border-radius: 50px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682);
+}
+
+#lock {
+    background-image: image(url("$HOME/.config/wlogout/icons/lock_ebbcba.png"), url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+    border-radius: 50px 0px 0px 0px;
+    margin : 20px 0px 0px 150px;
+}
+
+#lock:hover {
+    margin: -20px 0px 0px 20px;
+    border-radius: 50px 20px 0px 20px;
+}
+
+#logout {
+    background-image: image(url("$HOME/.config/wlogout/icons/logout_ebbcba.png"), url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+       border-radius: 0px 0px 0px 50px;
+    margin : 0px 0px 20px 150px;
+}
+
+#logout:hover {
+    margin: 0px 0px -20px 20px;
+    border-radius: 20px 0px 20px 50px;
+}
+
+#shutdown {
+    background-image: image(url("$HOME/.config/wlogout/icons/shutdown_ebbcba.png"), url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+   border-radius: 0px 50px 0px 0px;
+    margin : 20px 150px 0px 0px;
+}
+
+#shutdown:hover {
+    border-radius: 20px 50px 20px 0px;
+    margin: -20px 20px 0px 0px;
+}
+
+#reboot:hover {
+     border-radius: 0px 20px 50px 20px;
+     margin: 0px 20px -20px 0px;
+    }
+
+
+#reboot {
+    background-image: image(url("$HOME/.config/wlogout/icons/reboot_ebbcba.png"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    border-radius: 0px 0px 50px 0px;
+    margin : 0px 150px 20px 0px;
+}
+
+

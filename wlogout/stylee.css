@@ -1,0 +1,82 @@
+* {
+    background-image: none;
+    font-size: 16px; /* Hardcoded font size */
+        margin: 0; /* Add this line to reset margins */
+    padding: 0;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */ /* Hardcoded solid background color */
+}
+
+button {
+    color: #ebbcba; /* Hardcoded button text color */
+    background-color: #26233a; /* Hardcoded button background color */
+    outline-style: none;
+    border: none;
+    border-width: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in infinite;
+}
+
+button:focus {
+    background-color: #31748f; /* Hardcoded focused button background color */
+    background-size: 20%;
+}
+
+button:hover {
+    background-color: #eb6f92; /* Hardcoded hovered button background color */
+    background-size: 25%;
+    border-radius: 10px; /* Hardcoded border radius for hovered buttons */
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682);
+}
+
+button:hover#lock {
+    border-radius: 10px 10px 0px 10px; /* Hardcoded border radius for hovered lock button */
+    margin: 5px 0px 0px 5px; /* Hardcoded margin for hovered lock button */
+}
+
+button:hover#logout {
+    border-radius: 10px 0px 10px 10px; /* Hardcoded border radius for hovered logout button */
+    margin: 0px 0px 5px 5px; /* Hardcoded margin for hovered logout button */
+}
+
+button:hover#shutdown {
+    border-radius: 10px 10px 10px 0px; /* Hardcoded border radius for hovered shutdown button */
+    margin: 5px 5px 0px 0px; /* Hardcoded margin for hovered shutdown button */
+}
+
+button:hover#reboot {
+    border-radius: 0px 10px 10px 10px; /* Hardcoded border radius for hovered reboot button */
+    margin: 0px 5px 5px 0px; /* Hardcoded margin for hovered reboot button */
+}
+
+#lock {
+    background-image: image(url("$HOME/.config/wlogout/icons/lock_ebbcba.png"), url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+    border-radius: 10px 0px 0px 0px; /* Hardcoded border radius for lock button */
+    margin: 5px 0px 0px 5px; /* Hardcoded margin for lock button */
+}
+
+#logout {
+    background-image: image(url("$HOME/.config/wlogout/icons/logout_ebbcba.png"), url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+    border-radius: 0px 0px 0px 10px; /* Hardcoded border radius for logout button */
+    margin: 0px 0px 5px 5px; /* Hardcoded margin for logout button */
+}
+
+#shutdown {
+    background-image: image(url("$HOME/.config/wlogout/icons/shutdown_ebbcba.png"), url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    border-radius: 0px 10px 0px 0px; /* Hardcoded border radius for shutdown button */
+    margin: 5px 5px 0px 0px; /* Hardcoded margin for shutdown button */
+}
+
+#reboot {
+    background-image: image(url("$HOME/.config/wlogout/icons/reboot_ebbcba.png"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    border-radius: 0px 0px 10px 0px; /* Hardcoded border radius for reboot button */
+    margin: 0px 5px 5px 0px; /* Hardcoded margin for reboot button */
+}
